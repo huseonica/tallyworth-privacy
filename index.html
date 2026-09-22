@@ -23,7 +23,7 @@
 <body>
 
 <h1>Privacy Policy for TallyWorth</h1>
-<p class="updated">Last updated: September 10, 2026</p>
+<p class="updated">Last updated: September 22, 2026</p>
 
 <p>TallyWorth is a personal finance app built by David Huseonica / DJH Systems &amp; Integration. This policy explains what happens to your data when you use it.</p>
 
@@ -31,14 +31,24 @@
 <p>TallyWorth has no backend server. There is no DJH Systems &amp; Integration database, no analytics, and no advertising. Your financial data lives on your own devices and syncs privately through your own iCloud account. We never see it, store it, or have access to it.</p>
 
 <h2>What data the app handles</h2>
-<p>TallyWorth stores the account, balance, holding, and transaction information you enter or import: account names, balances, dates, and related notes you choose to add. This data is stored locally on your device using Apple's SwiftData framework and, if you have iCloud enabled, synced across your own devices via Apple's CloudKit &mdash; using your personal iCloud account, subject to Apple's own privacy policy.</p>
+<p>TallyWorth stores the account, balance, holding, and transaction information you enter or import: account names, balances, dates, and related notes you choose to add. If you use the optional Retirement Outlook feature, it also stores the retirement profile details you enter: your current age, target retirement age, desired annual income, risk tolerance, and any notes you add. This data is stored locally on your device using Apple's SwiftData framework and, if you have iCloud enabled, synced across your own devices via Apple's CloudKit &mdash; using your personal iCloud account, subject to Apple's own privacy policy.</p>
 
 <h2>AI-powered statement import (optional)</h2>
 <p>TallyWorth can optionally use AI to read PDF bank or brokerage statements and extract balances, holdings, and transactions. This feature is opt-in and works as follows:</p>
 <ul>
   <li><strong>Apple Intelligence:</strong> processing happens entirely on your device. Nothing leaves your device for this option.</li>
-  <li><strong>Claude, Gemini, or ChatGPT:</strong> if you choose one of these, the text of the statement you're importing is sent directly from your device to that provider's API, using an API key that you obtain and enter yourself. That request goes straight from your device to the provider &mdash; it never passes through any server we operate, because we don't operate one. Use of these providers is governed by their own privacy policies (Anthropic, Google, and OpenAI respectively).</li>
+  <li><strong>Claude, Gemini, or ChatGPT:</strong> if you choose one of these, the text of the statement you're importing &mdash; including any account identifiers, balances, and transaction details it contains &mdash; is sent directly from your device to that provider's API, using an API key that you obtain and enter yourself. That request goes straight from your device to the provider &mdash; it never passes through any server we operate, because we don't operate one. Use of these providers is governed by their own privacy policies (Anthropic, Google, and OpenAI respectively).</li>
 </ul>
+<p>Before this data is sent to Claude, Gemini, or ChatGPT for the first time, TallyWorth shows you exactly what will be sent and asks you to agree before proceeding. You can review this disclosure again, or reset your choice, at any time from Settings.</p>
+
+<h2>AI-powered retirement projections (optional)</h2>
+<p>TallyWorth can optionally generate a Retirement Assessment using AI, based on your account data and the retirement profile you enter. This feature is opt-in and works as follows:</p>
+<ul>
+  <li><strong>Apple Intelligence:</strong> processing happens entirely on your device. Nothing leaves your device for this option.</li>
+  <li><strong>Claude, Gemini, or ChatGPT:</strong> if you choose one of these, your account names, types, and balances, along with your retirement profile (current age, target retirement age, desired annual income, risk tolerance, and any notes you've entered), are sent directly from your device to that provider's API, using an API key that you obtain and enter yourself. As with statement import, this request goes straight from your device to the provider and never passes through any server we operate. Use of these providers is governed by their own privacy policies (Anthropic, Google, and OpenAI respectively).</li>
+</ul>
+<p>Before this data is sent to Claude, Gemini, or ChatGPT for the first time, TallyWorth shows you exactly what will be sent and asks you to agree before proceeding. You can review this disclosure again, or reset your choice, at any time from Settings.</p>
+<p>The Retirement Assessment is an educational estimate only and is not financial advice.</p>
 
 <h2>API keys</h2>
 <p>API keys you enter for AI providers are stored only in your device's Keychain, protected by Apple's system-level encryption. We never transmit, collect, or have access to your API keys.</p>
